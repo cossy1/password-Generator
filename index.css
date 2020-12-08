@@ -1,0 +1,41 @@
+.main-container{
+background-color: rgb(57, 174, 182);
+margin:  0 auto;
+margin-top: 2%;
+width: 35%;
+padding-top: 1%;
+padding-bottom: 1%;
+height: 500px;
+
+}
+
+.main{
+    background-color: rgb(20, 20, 58);
+    width: 70%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.head{
+    color: white;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inner-box{
+    background-color: red;
+    border-radius: 1%;
+}
+
+.word{
+    color: white;
+    float: left;
+    margin-left: 10px;
+}
+
+.option{
+    color: white;
+    float: right;
+    margin-right: 10px;
+}
