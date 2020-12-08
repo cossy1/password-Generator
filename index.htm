@@ -6,23 +6,91 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Password Generator</title>
+
 </head>
 <body>
     <div class="main-container">
         <div class="main">
             <h2 class="head">Password Generator</h2>
+            <div class = "card text-white" id="ans">
+                <div class = "word">Generated Password</div>
+                <div class="copy">Click to copy</div>
+             </div>
 
+             <div>
+                 <p>LENGTH: <span style="color: white;"> 14</span></p>
+             </div>
 
-             <div class="inner-box">
-                <div class="word">
-                    <p>Content </p>
+             <div class = "card text-white" id="ans">
+                <div class="stripe">
+                    <label for="customRange1"></label>
+                <input type="range" class="custom-range" draggable="false" height="1"
+                 id="customRange1" value="200" maxlength="100" minlength="1" max>
                 </div>
-                <div class="option">
-                    <p>marks </p>
+                
+                  
                 </div>
-            </div>
-        </div>
-      
+                <br>
+
+             <div class = "card text-white" id="ans">
+                <div class="word">Include Uppercase</div>
+                  
+                  <!-- Rounded switch -->
+                  <div id="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                  </div>
+                  
+                </div>
+             <br>
+
+             <div class = "card text-white" id="ans">
+                <div class = "word">Include Lowercase</div>
+                <!-- Rounded switch -->
+                <div id="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+              </div>
+             <br>
+
+             <div class = "card text-white" id="ans">
+                <div class = "word">Include Numbers</div>
+                  <!-- Rounded switch -->
+                  <div id="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                  </div>
+             </div>
+             <br>
+
+             <div class = "card text-white" id="ans">
+                <div class = "word">Include Symbols</div>
+                  <!-- Rounded switch -->
+                  <div id="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                  </div>
+             </div>
+            
+             <br>
+
+             <div class = "card text-white" id="ans">
+                    <input type="button" value="Generate Password" class="container">
+                 
+                  </div>
+             </div>
+             
+               
+            </div>     
 
     </div>
     

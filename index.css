@@ -1,7 +1,6 @@
 .main-container{
-background-color: rgb(57, 174, 182);
+background-color: rgb(0,191,255);
 margin:  0 auto;
-margin-top: 2%;
 width: 35%;
 padding-top: 1%;
 padding-bottom: 1%;
@@ -9,11 +8,21 @@ height: 500px;
 
 }
 
+p{
+    color:grey;
+    font-size: x-small;
+    margin-left: 30px;
+
+}
+
 .main{
-    background-color: rgb(20, 20, 58);
+    /* background-color: rgb(20, 20, 58); */
+    background-color: rgb(5, 20, 85);
+    border-radius: 10px;
     width: 70%;
     margin: 0 auto;
-    height: 400px;
+    margin-top: 5%;
+    height: 430px;
 }
 
 .head{
@@ -26,16 +35,127 @@ height: 500px;
 .inner-box{
     background-color: red;
     border-radius: 1%;
+    color: red;
+    width: auto;
+}
+
+#ans{
+    background-color: rgb(25,25,112);
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 3px;
+
+}
+
+.copy{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size: xx-small;
+    margin-right: 5px;
+}
+
+.submit{
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 3px;
 }
 
 .word{
     color: white;
     float: left;
-    margin-left: 10px;
+
 }
 
-.option{
-    color: white;
-    float: right;
-    margin-right: 10px;
+.check{
+    position:absolute;
+    right:0;
+    font-size: small;
+    margin-right: 5px;
+    align-items: center;
 }
+
+.stripe{
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(136, 40, 226);
+    border-radius: 5px;
+}
+
+#toggle{
+    position:absolute;
+    right:0;
+    font-size: small;
+    margin-right: 5px;
+    align-items: center;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    right: 10px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(18, 59, 240);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(10px)
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
