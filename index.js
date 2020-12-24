@@ -54,16 +54,12 @@ function getRange() {
     console.log(range);
     newR = document.getElementById("numberRange").innerHTML = range;
 
+} 
+
+function copyText(){
+    let r = document.createRange();
+    r.selectNode(document.getElementById('gpassword'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
 }
-
-document.querySelector("#gpassword").addEventListener("click", pick);
-
-
-function pick() {
-    /* Get the text field */
-    var copyText = document.querySelector("#gpassword").innerHTML;
-      
-    document.execCommand("copy");
-  
-    alert("Copied the text: " + copyText);
-  }
